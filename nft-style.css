@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    background-color: hsl(217, 54%, 11%);
+
+}
+
+section {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    max-width: 350px;
+    width: auto;
+    height:auto;
+
+    /*pour centrer au milieu de la page*/
+    position: absolute;
+    top: 50%; left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+#image{
+    background-image: url(images/image-equilibrium.jpg);
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    padding: 150px 0px 150px 0px;
+    border-radius: 10px;
+}
+
+#image:hover{
+    cursor: pointer;
+    background-image: url(images/icon-view.svg), linear-gradient(hsl(178, 100%, 50%, 0.5), hsl(178, 100%, 50%, 0.5)), url("images/image-equilibrium.jpg");
+    background-position: center, center, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 30px, cover, cover;
+    padding: 150px 0px 150px 0px;
+}
+
+#texte {
+    width: 310px;
+    margin:20px;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bottom {
+    display: flex;
+    align-items: center;
+    border-top: solid 0.5px hsl(215, 51%, 70%);
+    margin-top: 20px;
+    padding-top: 10px;
+    height: 30px;
+
+}
+
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h1:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+p, #days {
+    color: hsl(215, 51%, 70%);
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+}
+
+#eth {
+    color:hsl(178, 100%, 50%);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+
+#creation {
+    color: hsl(215, 51%, 70%);
+    font-weight: lighter;
+    padding:0 5px 0 5px;
+}
+
+#name {
+    color: hsl(0, 0%, 100%); 
+
+}
+
+#name:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+#avatar {
+    height: 25px;
+    border: solid 1px white;
+    border-radius: 50%;
+    text-align: center;
+    margin:5px;
+}
+
+.icone {
+    padding-right:5px;
+}
